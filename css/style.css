@@ -168,6 +168,7 @@ body{
         right: 0;
         height: 91.3vh;
         display: flex;
+        justify-content: space-around;
         flex-direction: column;
         list-style: none;
         align-items: center;
