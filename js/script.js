@@ -14,20 +14,20 @@ $(document).ready(function(){
             }
         });
         if(open){
-            $('.t-navbar').css("background-color","black");
+            /* $('.t-navbar').css("background-color","black"); */
             menu.removeClass(' open');
             open = false;
         }else{
-            $('.t-navbar').css("background-color","red");
+            /* $('.t-navbar').css("background-color","red"); */
             menu.addClass('open');
             open= true;
         }
     });
-    $(window).on('scroll', function(){
+    /* $(window).on('scroll', function(){
         if($(window).scrollTop()){
-            $('.t-navbar').css("background-color","rgb(117, 28, 28)");
+            $('.t-navbar').css("background-color","rgb(0, 0, 0)");
         }else{
-            $('.t-navbar').css("background-color","rgb(26, 25, 25)");
+            $('.t-navbar').css("background-color","white");
         }
-    });
+    }); */
 })

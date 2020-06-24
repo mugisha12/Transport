@@ -22,7 +22,7 @@ body{
     position: relative;
     min-height: 4vh;
     background-color: rgb(12, 12, 34);
-    padding: 8px 60px;
+    padding: 8px 5%;
 }
 .inf-header-list{
     margin: 0;
@@ -31,7 +31,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     list-style: none;
 }
 .top-icons{
@@ -51,12 +51,20 @@ body{
     align-items: center;
     position: relative;
     min-height: 8vh;
-    background-color: rgb(26, 25, 25);
-    padding: 20px 60px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 5%;
+    opacity: 0.9;
     transition: background-color .5s ease-in-out;
 }
 .t-nav-logo{
     width: 35%;
+}
+.t-nav-logo a{
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 .t-nav-menu{
     width: 65%;
@@ -65,7 +73,7 @@ body{
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .t-nav-menu li{
     position: relative;
@@ -156,7 +164,7 @@ body{
     }
     .t-nav-menu{
         width: 85%;
-        top: 9.7vh;
+        top: 8.7vh;
         right: 0;
         height: 92vh;
         display: flex;
@@ -164,15 +172,19 @@ body{
         list-style: none;
         align-items: center;
         position: absolute;
-        background-color: red;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.9;
         transform: translateX(100%);
         transition: transform .5s ease-in-out;
     }
     .t-nav-links{
         opacity: 0;
     }
-    .t-nav-menu-toggle{
+    .t-nav-menu.t-nav-menu-toggle{
         transform: translateX(0%);
+    }
+    .information-header{
+        display: none;
     }
     @keyframes linksopacity {
         from{
